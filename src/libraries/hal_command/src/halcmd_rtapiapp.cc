@@ -34,7 +34,9 @@ int rtapi_rpc(void *socket, machinetalk::Container &tx, machinetalk::Container &
     assert(request);
     assert(tx.SerializeWithCachedSizesToArray(zframe_data (request)));
     if (proto_debug) {
-	string buffer;
+    std::string buffer;
+
+	//string buffer;
 	if (TextFormat::PrintToString(tx, &buffer)) {
 	    fprintf(stderr, "%s:%d:%s: request ---->\n%s%s\n",
 		    __FILE__,__LINE__,__FUNCTION__,
@@ -51,7 +53,9 @@ int rtapi_rpc(void *socket, machinetalk::Container &tx, machinetalk::Container &
     int retval =  rx.ParseFromArray(zframe_data (reply),
 				    zframe_size (reply)) ? 0 : -1;
    if (proto_debug) {
-	string buffer;
+    std::string buffer;
+
+	//string buffer;
 	if (TextFormat::PrintToString(rx, &buffer)) {
 	    fprintf(stderr, "%s:%d:%s: <---- reply\n%s%s\n",
 		    __FILE__,__LINE__,__FUNCTION__,
