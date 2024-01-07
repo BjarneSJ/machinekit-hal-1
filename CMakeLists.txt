@@ -80,6 +80,18 @@ include(GNUInstallDirs)
 include(CPackComponent)
 include(CPack)
 
+#Bjarne
+#include <std::string>
+#include <std::string buffer>
+
+#include <boost/thread/tss.hpp>
+
+##static boost::thread_specific_ptr<string> _tssThreadNameSptr;
+####include <string>
+
+##############################################
+##using std::string;
+##############################################
 set(MACHINEKIT_HAL_NAMESPACE "Machinekit::HAL")
 set(MACHINEKIT_HAL_EXECUTABLE_DIRECTORY "${CMAKE_INSTALL_BINDIR}")
 set(MACHINEKIT_HAL_LIBRARY_DIRECTORY "${CMAKE_INSTALL_LIBDIR}")
