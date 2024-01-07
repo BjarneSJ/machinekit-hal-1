@@ -1,0 +1,26 @@
+Ja, det kan du. För att göra en fork privat behöver du ändra behörigheterna för repot. Du kan göra det genom att gå till inställningarna för repot och ändra "Public access" till "Private".
+
+När du har gjort detta kommer repot att vara privat och endast tillgängligt för dig och de personer som du bjuder in.
+
+För att göra en fork privat i Git Bash kan du använda följande kommandon:
+
+```
+git remote set-url origin git@github.com:[ditt_användarnamn]/[repots_namn].git
+```
+
+Detta kommer att ändra den ursprungliga URL:en för repot till en privat URL. Du kan sedan pusha dina ändringar till den privata repot.
+
+```
+git push -u origin master
+```
+
+Om du vill göra en fork privat i GitHub Desktop kan du göra följande:
+
+1. Klicka på repots namn.
+2. Klicka på "Settings".
+3. Klicka på "Collaborators and teams".
+4. Klicka på "Public access".
+5. Välj "Private".
+6. Klicka på "Save".
+
+Efter att du har gjort detta kommer repot att vara privat och endast tillgängligt för dig och de personer som du bjuder in.
