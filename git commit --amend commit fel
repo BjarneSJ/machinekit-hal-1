@@ -1,0 +1,29 @@
+git commit --amend commit fel
+
+Hej!
+
+För att avbryta ett commit-fel när du glömmer att skriva ett meddelande kan du använda följande kommandon:
+
+```
+git commit --amend
+```
+
+Detta kommer att öppna ett editorfönster där du kan skriva ett meddelande. När du har skrivit meddelandet kan du spara och stänga editorn.
+
+Du kan också använda följande kommandon för att avbryta ett commit-fel:
+
+```
+git reset HEAD^
+```
+
+Detta kommer att rensa alla ändringar som du har gjort sedan senaste commit. Du kan sedan göra dina ändringar igen och commita dem med ett meddelande.
+
+Om du använder Git Bash kan du använda följande kortkommando för att avbryta ett commit-fel:
+
+```
+git commit -a -m ""
+```
+
+Detta kommer att öppna ett editorfönster där du kan skriva ett meddelande. När du har skrivit meddelandet kan du spara och stänga editorn.
+
+Jag hoppas att detta hjälper!
