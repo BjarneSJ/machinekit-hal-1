@@ -1,0 +1,61 @@
+The error message "fatal: Not possible to fast-forward, aborting." indicates that Git is unable to simply update your local branch to the latest version of the remote branch using a fast-forward merge. This means that there are some conflicts between your local commits and the remote commits.
+
+To resolve this issue, you will need to perform a merge or a rebase. A merge will create a new commit that combines your local changes with the remote changes, while a rebase will rewrite your local history to make it appear as if your changes were made on top of the remote branch.
+
+Here are the steps to resolve the issue using a merge:
+
+1. Fetch the latest changes from the remote branch:
+
+```
+git fetch origin
+```
+
+2. Merge the remote branch into your local branch:
+
+```
+git merge origin/master
+```
+
+3. Resolve any merge conflicts:
+
+If there are any merge conflicts, you will need to manually resolve them. This typically involves editing files to merge the conflicting changes together.
+
+4. Push your merged changes to the remote branch:
+
+```
+git push origin master
+```
+
+Here are the steps to resolve the issue using a rebase:
+
+1. Checkout the master branch:
+
+```
+git checkout master
+```
+
+2. Fetch the latest changes from the remote branch:
+
+```
+git fetch origin
+```
+
+3. Rebas your local commits onto the remote branch:
+
+```
+git rebase origin/master
+```
+
+4. Resolve any rebase conflicts:
+
+If there are any rebase conflicts, you will need to manually resolve them. This typically involves editing files to modify the rebased commits.
+
+5. Force push your rebased changes to the remote branch:
+
+```
+git push origin HEAD --force
+```
+
+Please note that forcing a push can overwrite other people's work, so it should be used with caution.
+
+I hope this helps!
