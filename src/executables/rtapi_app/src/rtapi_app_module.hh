@@ -51,7 +51,7 @@ int Module::load(std::string module)
 {
     char module_path[PATH_MAX];
     bool is_rpath;
-    string dlpath;
+    std::string dlpath;
     struct stat st;
 
     // For module given as a path (sans `.so`), use the path basename as the
