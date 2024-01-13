@@ -74,6 +74,10 @@
 #define RTAPI_MAX_SHMEMS	32
 
 #define RTAPI_LINELEN           255
+
+
+#define RTAPI
+
  
 #if ( !defined RTAPI ) && ( !defined ULAPI )
 #error "Please define either RTAPI or ULAPI!"
