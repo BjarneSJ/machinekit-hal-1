@@ -22,6 +22,12 @@
 #include <string>
 
 #include <sys/stat.h>
+#include <stdio.h>
+using namespace std; 
+#include <string.h>
+#include "rtapi.h"
+#include <rtapi.h>
+
 
 
 
@@ -35,7 +41,8 @@
 class Module
 {
   public:
-    std::string name;
+    //std::
+    string name;
     void *handle;
     char *errmsg;
 
