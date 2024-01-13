@@ -21,6 +21,10 @@
 #include <limits.h>       // PATH_MAX
 #include <string>
 
+#include <sys/stat.h>
+
+
+
 // dlinfo()
 #ifndef _GNU_SOURCE
 #define _GNU_SOURCE
@@ -142,7 +146,7 @@ template <class T> T Module::sym(const char *sym_name)
     return res;
 }
 
-template <class T> T Module::sym(const string &sym_name)
+template <class T> T Module::sym(const std::string &sym_name)
 {
     return sym<T>(sym_name.c_str());
 }
