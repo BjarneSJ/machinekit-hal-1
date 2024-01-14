@@ -25,9 +25,10 @@
 #include <stdio.h>
 using namespace std; 
 #include <string.h>
+/*
 #include "rtapi.h"
 #include <rtapi.h>
-
+*/
 
 
 
