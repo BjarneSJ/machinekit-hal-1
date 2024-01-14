@@ -76,16 +76,17 @@
 #define RTAPI_LINELEN           255
 
 
-#define RTAPI
+//#define ULAPI
 
  
 #if ( !defined RTAPI ) && ( !defined ULAPI )
 #error "Please define either RTAPI or ULAPI!"
 #endif
+/*
 #if ( defined RTAPI ) && ( defined ULAPI )
 #error "Can't define both RTAPI and ULAPI!"
 #endif
-
+*/
 #ifdef __cplusplus
 #define RTAPI_BEGIN_DECLS extern "C" {
 #define RTAPI_END_DECLS }
